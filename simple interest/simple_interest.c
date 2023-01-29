@@ -10,7 +10,7 @@ void main()
 	printf("enter rate of interest");
 	scanf("%d",&r);
 	simple=(p*t*r)/100;
-	compound=p*pow((1+r/100),time);
+	compound=p*pow((1+r/100),t);
 	printf("the simple interest is %d\n",simple);
 	printf("the compound interest is %d",compound);
 	return;
