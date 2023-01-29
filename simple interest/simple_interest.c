@@ -1,14 +1,18 @@
 #include<stdio.h>
+#include<math.h>
 void main()
 {
-	int p,t,r;
+	int p,t,r,simple,compound;
 	printf("enter principle amount");
 	scanf("%d",&p);
 	printf("enter the number of years");
 	scanf("%d",&t);
 	printf("enter rate of interest");
 	scanf("%d",&r);
-	printf("the simple interest is %d",(p*t*r)/100);
+	simple=(p*t*r)/100;
+	compound=p*pow((1+r/100),time);
+	printf("the simple interest is %d\n",simple);
+	printf("the compound interest is %d",compound);
 	return;
 	}
 	
